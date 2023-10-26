@@ -25,13 +25,13 @@ class Regressor:
 
     def __init__(
         self,
-        alpha: Optional[float] = 0.5,
+        alpha: Optional[float] = 0.2,
         **kwargs,
     ):
         """Construct a new Lasso regressor.
 
         Args: Constant that multiplies the L1 term, controlling regularization strength. alpha must be a non-negative
-        float i.e. in [0, inf) Defaults to 0.5
+        float i.e. in [0, inf) Defaults to 0.2
         """
         self.alpha = float(alpha)
         self.model = self.build_model()
